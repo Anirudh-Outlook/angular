@@ -1,0 +1,38 @@
+<!-- <app-grandchild></app-grandchild>> -->
+
+            <!-- data sharing...... multiple data b/w parent & child -->
+<!-- <app-child [toPar]= "sendtoChild" [isS]="title" [bhu]="'haha'" [nu]="2" [jum]="true"  (shar)="myIt($event)"  (newItemEvent)="addItem($event)" (bongu)="xz($event)" ></app-child> -->
+
+<!-- {{msg}}
+{{sendtoChild}}
+{{title }} - idhi main app component's title -->
+
+<button style="font-size: 20px; height: 50px; width: 20%; text-align: center; margin-right: 6%;"  >
+  <a routerLink="/child"    onMouseOver="this.style.color='red'"
+  onMouseOut="this.style.color='blue'" >child</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a routerLink="/gc" >grand</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a routerLink="/" >home</a>
+</button>
+<router-outlet></router-outlet>
+
+
+<h1 class="B1"> yooo</h1>
+<h2 [style.color]="'red'" [style.textAlign]="'center'" >App component</h2>
+
+<button (click)="clicked()">hiiiiii</button> {{isShow}}
+<a style="color: {{isShow?'blue':'red'}} ; font-size: 80px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> {{isShow?'hi in blue':'bye in read'}}</a>
+<br/><br/>
+<p *ngIf="isShow; then tr else fal "></p>
+
+      <ng-template #tr> 
+          <h1>true</h1>
+          <h4>anta</h4>
+      </ng-template>
+
+      <ng-template #fal> 
+        <h1>false</h1>
+        <h4>anta</h4>
+      </ng-template>
+
+
+<h6 *ngFor="let x of myChoice; index as i "  ><li>{{x}} and {{i}}</li></h6><br/><br/><br/><br/>

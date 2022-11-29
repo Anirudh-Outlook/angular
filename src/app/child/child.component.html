@@ -1,0 +1,32 @@
+<p>child works!</p><br/>
+
+
+<button (click)="qaz(12)">mg</button>
+
+<br/><br/>
+{{toPar}} bhu {{isS}}<br/>{{bhu}}<br/>{{nu+7}}
+<br/>
+<div>{{bhu=='ha'?'yo':<div>lol</div>}}<br/><br/><br/><br/><br/><br/>
+{{bhu}} is it lol?</div><br/><br/><br/><br/><br/><br/>
+and{{fi2}}this
+<p *ngIf="bhu; then fi else se"></p>
+
+<ng-template #fi> hiiiii baby</ng-template>
+<a #fi2> hahahahahhahahahaha</a>
+<ng-template #se> hello baby</ng-template>
+<br/><br/><br/><br/><br/><br/>
+
+<br/><br/><br/><br/><br/><br/>
+
+<label for="item-input">Add an item:</label>
+<input type="text" id="item-input" #newItem>
+<button type="button" (click)="addNewItem(newItem.value)">Add to parent's list</button>
+
+<br/>
+<input type="text" #myItem > &nbsp;
+<button type="button" (click)="met(myItem.value)" style="color:red; background-color: aqua; border-bottom-right-radius:300%; width: 500px;" >additional</button>
+
+<br/><br/><br/><br/><br/><br/>
+<!-- {{jum}}-----jum<br/> <button  (click)="impr()" > add</button>
+<ul *ngFor="let x of student" ><li>{{x.id}}'  '  {{x.fn}}</li></ul> -->
+<br/><br/><br/><br/><br/><br/>
